@@ -26,58 +26,58 @@
     android:weightSum="6">
     <Button
         android:id="@+id/btn_text1"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="@string/btn_text1"
         android:layout_weight="1"
-        android:textSize="14dp"/>
+        android:textSize="12dp"/>
     <Button
         android:id="@+id/btn_text2"
         android:layout_gravity="center"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btn_text2"
         android:layout_weight="1"
-        android:textSize="14dp"/>
+        android:textSize="12dp"/>
     <Button
         android:id="@+id/btn_text3"
         android:layout_gravity="center"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="@string/btn_text3"
-        android:textSize="14dp"/>
+        android:textSize="12dp"/>
     <Button
         android:id="@+id/btn_text4"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="@string/btn_text4"
-        android:textSize="14dp"/>
+        android:textSize="12dp"/>
     <Button
         android:id="@+id/btn_text5"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
         android:layout_weight="1"
         android:text="@string/btn_text5"
-        android:textSize="14dp"/>
+        android:textSize="12dp"/>
     <Button
         android:id="@+id/btn_thoat"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
         android:layout_weight="1"
         android:text="@string/btn_thoat"
-        android:textSize="14dp"/>
+        android:textSize="12dp"/>
 </LinearLayout>
    <!--- <TextView
         android:layout_width="wrap_content"

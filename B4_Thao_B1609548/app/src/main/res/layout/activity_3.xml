@@ -16,6 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:inputType="text"
+        android:backgroundTint="#FF0099"
         android:ems="10"/>
     <Button
         android:id="@+id/btnNhap"

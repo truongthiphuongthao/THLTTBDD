@@ -16,6 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/nhapurl"
+        android:backgroundTint="#FF3366"
         android:hint="http://www.amazon.com"/>
     <Button
         android:id="@+id/btn_webbrowser"
@@ -35,6 +36,7 @@
         android:id="@+id/nhapnumberphone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="#FF3366"
         android:inputType="numberDecimal"
         android:hint="5556"/>
     <Button
@@ -55,6 +57,7 @@
         android:id="@+id/nhapgeo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="#FF3366"
         android:hint="37.827500,-122.481670"/>
     <Button
         android:id="@+id/btn_showMap"

@@ -31,6 +31,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_span="2"
+                android:backgroundTint="#FF0099"
                 android:ems="10">
                 <requestFocus/>
             </EditText>
@@ -49,6 +50,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_span="2"
+                android:backgroundTint="#FF0099"
                 android:ems="10"/>
         </TableRow>
         <TableRow
@@ -68,11 +70,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="true"
+                    android:textSize="11dp"
+                    android:buttonTint="#FF0099"
                     android:text="CHIỀU THỨ BA"/>
                 <RadioButton
                     android:id="@+id/radNhom2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="11dp"
+                    android:buttonTint="#FF0099"
                     android:text="CHIỀU THỨ TƯ"/>
             </RadioGroup>
         </TableRow>

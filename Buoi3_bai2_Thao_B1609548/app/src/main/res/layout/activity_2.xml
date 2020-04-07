@@ -52,6 +52,7 @@
             android:layout_height="wrap_content"
             android:text="Gọi Broadcast Receiver"
             android:textSize="25sp"
+            android:textColor="#0000ff"
             android:layout_alignParentBottom="true"/>
     </RelativeLayout>
 </LinearLayout>
