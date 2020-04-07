@@ -182,6 +182,10 @@ Button btnmenu, btnpopup, thoat;// khai báo các đối tượng Button
                     break;
                 }
                 switch (item.getItemId()){
+                    case R.id.item3_3:btnpopup.setText("MENU SAVE");
+                        break;
+                }
+                switch (item.getItemId()){
                     case R.id.item3_4:btnpopup.setText("MENU DELETE");
                     break;
                 }
@@ -190,6 +194,4 @@ Button btnmenu, btnpopup, thoat;// khai báo các đối tượng Button
         });
         popupMenu.show();
     }
-
-
 }
