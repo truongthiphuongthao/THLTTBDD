@@ -1,5 +1,6 @@
 package com.example.buoi2_thao_b1609548;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -35,7 +36,7 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback {
         thread = new ThreadView(this);
         time.start();
     }
-
+    @SuppressLint("WrongCall")
     public void doDraw(Canvas c) {
         if (count > 0) {
             bug.onDraw(c);
@@ -109,7 +110,7 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback {
                 int centerX = bug.x + dia;
                 int centerY = bug.y + dia;
                 dis = (float) Math.sqrt((((centerX - X) * (centerX - X)) + (centerY - Y) * (centerY - Y)));
-                if (count < 0) {
+                if (count > 0) {
                     if (dis < dia) {
                         kq++;
                         bug.x = 100;

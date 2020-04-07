@@ -37,7 +37,7 @@ public class VeCoBan extends View {
         canvas.drawText("Chiều cao của màn hình = "+Hcanvas,80,220,paint);
 
         // Khai báo một hình chữ nhật để vẽ cung trong đó
-        RectF rectF = new RectF(30, ycanvas/4-xcanvas/12, xcanvas/2-60,ycanvas/4+xcanvas/2-120);
+        RectF rectF = new RectF(10, ycanvas/4-xcanvas/8+50, xcanvas/2+10,ycanvas/4+xcanvas/2-70);
         paint.setColor(Color.WHITE);
         // Hình oval nằm trong HCN chứa cung sắp vẽ
         canvas.drawOval(rectF,paint);
@@ -50,7 +50,7 @@ public class VeCoBan extends View {
         paint.setColor(Color.RED);
         paint.setStyle(Paint.Style.STROKE);
         paint.setStrokeWidth(10);
-        canvas.drawCircle(xcanvas/2+60, ycanvas/3, xcanvas/8, paint);
+        canvas.drawCircle(xcanvas/2+100, ycanvas/4+40, xcanvas/8-10, paint);
         //Vẽ line
         paint.setColor(Color.BLACK);
         paint.setStyle(Paint.Style.STROKE);
@@ -59,7 +59,7 @@ public class VeCoBan extends View {
         // Vẽ hình chữ nhật đầy màu
         paint.setColor(Color.BLUE);
         paint.setStyle(Paint.Style.FILL);
-        canvas.drawRect(20, ycanvas/4+350, canvas.getWidth()-20, canvas.getHeight()-20,paint);
+        canvas.drawRect(20, ycanvas/4+250, canvas.getWidth()-20, canvas.getHeight()-80,paint);
         // Vẽ rotated text "Seahorse"
         paint.setColor(Color.RED);
         // Quay canvas -45 đo
