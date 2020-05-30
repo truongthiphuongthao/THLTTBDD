@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập url"
+        android:textSize="18dp"/>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="120dp"
+        android:textColor="#FFFFFF"
+        android:text="Connect"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical|center_horizontal"/>
+    <TextView
+        android:id="@+id/tv"
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text=""/>
+</RelativeLayout>

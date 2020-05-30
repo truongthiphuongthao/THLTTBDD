@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">B5_1_Thao_B1609548</string>
+    <string name="txt1">Hãy nhập vào một văn bản </string>
+    <string name="edittext1">Tôi là sinh viên trường đại học Cần Thơ</string>
+    <string name="btn1">LƯU</string>
+    <string name="btn2">TẢI</string>
+</resources>

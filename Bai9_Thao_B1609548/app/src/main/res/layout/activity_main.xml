@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <Button
+        android:id="@+id/btgetAllContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CCCCCC"
+        android:text="XEM TẤT CẢ LIÊN LẠC"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"/>
+    <Button
+        android:id="@+id/btgetAllLogs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#CCCCCC"
+        android:text="XEM LỊCH SỬ CUỘC GỌI"
+        android:textSize="18sp"/>
+    <Button
+        android:id="@+id/btgetAllMusic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#CCCCCC"
+        android:text="XEM DANH SÁCH MEDIA"
+        android:textSize="18sp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/daihoccantho">
+        </ImageView>
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

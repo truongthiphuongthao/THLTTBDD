@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">B5_2_Thao_B1609548</string>
+    <string name="txt1">Please enter some text</string>
+    <string name="edittext1">I am a student of CanTho university</string>
+    <string name="btn1">SAVE</string>
+    <string name="btn2">LOAD</string>
+</resources>

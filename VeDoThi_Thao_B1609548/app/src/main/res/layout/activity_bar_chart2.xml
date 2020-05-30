@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0d09de">
+        <ImageButton
+            android:id="@+id/imagebuttoncot"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/back1"
+            android:background="#0d09de"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Đồ thị cột"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>

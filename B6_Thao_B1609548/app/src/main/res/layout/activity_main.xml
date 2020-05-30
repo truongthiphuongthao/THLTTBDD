@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BUỔI THỰC HÀNH THỨ 6 - BÀI 1"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="#CC0000"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhap dia chi cua mot trang web"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#0000CC"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="URL"
+            android:textStyle="bold"
+            android:textColor="#0000CC"/>
+            <EditText
+            android:id="@+id/editUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/editUrl"/>
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+        <TableRow>
+            <Button
+                android:id="@+id/btnDuyetWeb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="DUYET WEB"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:background="#CCCCCC"
+                android:textColor="#0000CC"/>
+            <Button
+                android:id="@+id/btnLoaiKetNoi"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="LOAI KET NOI"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:background="#CCCCCC"
+                android:textColor="#0000CC"/>
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:id="@+id/txtView1"
+                android:layout_width="wrap_content"
+                android:textColor="#FF0000"
+                android:textSize="22dp"
+                android:layout_height="wrap_content"/>
+             <TextView
+                android:id="@+id/txtView"
+                android:layout_width="wrap_content"
+                android:textColor="#0033FF"
+                android:textSize="22dp"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>
