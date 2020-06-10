@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView mTVRequest;
     ArrayList<String> arrayUser, arrayChat;
     ArrayAdapter adapterUser, adapterChat;
-    private final String URL_SERVER = "http://192.168.1.8:3000";
+    private final String URL_SERVER = "http://192.168.43.93:3000";
     private Socket mSocket;
 
     @Override
@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(edtContent.getText().toString().trim().length()>0){
                     mSocket.emit("client-register-user",edtContent.getText().toString());
+                    Toast.makeText(MainActivity.this, edtContent.getText().toString(), Toast.LENGTH_SHORT).show();
                 }
                 }
         });
@@ -80,13 +81,15 @@ public class MainActivity extends AppCompatActivity {
         public void call(final Object... args) {
             runOnUiThread(new Runnable() {
                 public void run() {
+                    Toast.makeText(MainActivity.this, "Some thing sent", Toast.LENGTH_LONG);
                     JSONObject object = (JSONObject) args[0];
                     try{
                         String noiDung = object.getString("chatComent");
                         arrayChat.add(noiDung);
-                        adapterUser.notifyDataSetChanged();
+                        adapterChat.notifyDataSetChanged();
                     }catch (JSONException e){
                         e.printStackTrace();
+                        Toast.makeText(MainActivity.this, "ERROR:" + e, Toast.LENGTH_LONG);
                     }
                 }
                 });
