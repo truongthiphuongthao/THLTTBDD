@@ -47,6 +47,7 @@ public class BarChart3  extends AppCompatActivity {
                 finish();
             }
         });
+        mChart = findViewById(R.id.BarChartMpAndroid);
         Intent intent = getIntent();
         amountbar1 = intent.getDoubleExtra("cot1", 123);
         amountbar2 = intent.getDoubleExtra("cot2", 123);
@@ -59,7 +60,7 @@ public class BarChart3  extends AppCompatActivity {
         textView.setText("Đồ thị: " + Title);
         textView2.setText("1-" + Des1);
         textView3.setText("2-" + Des2);
-        textView4.setText("3" + Des3);
+        textView4.setText("3-" + Des3);
 
         mChart.setDrawBarShadow(false);
         mChart.setDrawValueAboveBar(true);

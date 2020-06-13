@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class UsingPreferencesActivity extends AppCompatActivity {
@@ -30,7 +31,9 @@ public class UsingPreferencesActivity extends AppCompatActivity {
         prefsEditor.putString("editTextPref", ((EditText)findViewById(R.id.txtString)).getText().toString());
         prefsEditor.commit();
     }
-        private void DisplayText(String str) {
+
+    private void DisplayText(String str) {
+        ((TextView) findViewById(R.id.txtString)).setText(str);
         Toast.makeText(getBaseContext(), str,  Toast.LENGTH_LONG).show();
     }
 }

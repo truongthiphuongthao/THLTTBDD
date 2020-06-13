@@ -9,6 +9,9 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+
 public class calculator extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -21,6 +24,8 @@ public class calculator extends AppCompatActivity {
         Button btntieptuc = findViewById(R.id.btntieptuc);
         final EditText edtthanhtien = findViewById(R.id.edtthanhtien);
         Button thoatbanhang = findViewById(R.id.btnthoatbanhang);
+//        final NumberFormat format = NumberFormat.getCurrencyInstance();
+
         btntieptuc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,17 +41,22 @@ public class calculator extends AppCompatActivity {
                 String dg = edtnhapdongia.getText().toString();
                 String thue = edtnhaptitlethue.getText().toString();
                 float tongtien = 0.3f;
+
+                String pattern = "###,###.##";
+                final DecimalFormat format = new DecimalFormat(pattern);
+                format.setGroupingSize(4);
+
                 if (sl.equals("")){
                     Toast.makeText(getApplicationContext(),"Can nhap vao so luong",Toast.LENGTH_SHORT).show();
                 }else if(edtnhapdongia.getText().toString().equals("")){
                     Toast.makeText(getApplicationContext(),"Can nhap vao don gia",Toast.LENGTH_SHORT).show();
                 }else  if(edtnhaptitlethue.getText().toString().equals("")){
                     tongtien = (float) (Integer.parseInt(sl)*Float.parseFloat(dg)+(Integer.parseInt(sl)*Float.parseFloat(dg)*0.1));
-                    edtthanhtien.setText(""+tongtien);
+                    edtthanhtien.setText(format.format(tongtien));
                 }
                 else {
                     tongtien = (Integer.parseInt(sl)*Float.parseFloat(dg)) +(Integer.parseInt(sl)*Float.parseFloat(dg)*Integer.parseInt(thue)/100);
-                    edtthanhtien.setText(""+tongtien);
+                    edtthanhtien.setText(format.format(tongtien));
                 }
             }
         });
