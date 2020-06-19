@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="ĐỀ THI THỰC HÀNH SỐ 2"
+        android:textColor="#CC0000"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TableRow>
+            <Button
+                android:id="@+id/btnthongbao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#0000EE"
+                android:background="#3399FF"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:text="THÔNG BÁO"/>
+            <Button
+                android:id="@+id/btntinhdiem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#0000EE"
+                android:background="#FF66CC"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:text="TÍNH ĐIỂM"/>
+        </TableRow>
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CHỌN CHỨC NĂNG"
+                    android:layout_weight="1"
+                    android:textColor="#0000EE"
+                    android:backgroundTint="#FF3333">
+                </CheckBox>
+                <Button
+                    android:id="@+id/btnthoat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="THOÁT"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#0000EE">
+                </Button>
+            </TableRow>
+        </TableLayout>
+        <TextView
+            android:id="@+id/txtchude"
+            android:layout_marginTop="20dp"
+            android:text="THI MÔN LẬP TRÌNH CHO THIẾT BỊ DI ĐỘNG"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#FF0000"
+            android:gravity="center"
+            android:visibility="invisible"/>
+        <TextView
+            android:id="@+id/txtlichthi"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:text="Lịch thi: Từ (giờ thi), ngày (ngày thi), phòng thi (phòng)"
+            android:textSize="15dp"
+            android:textColor="#0000EE"
+            android:gravity="center"
+            android:visibility="invisible"/>
+        <TextView
+            android:id="@+id/txtluuy"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:text="Lưu ý: -Sinh viên phải mang bản tên khi vào phòng thi và tắt điện thoại di động - Được dùng tài liệu giấy -
+            Không được truy cập mạng hoặc dùng USB - Không được thảo luận. "
+            android:textSize="15dp"
+            android:textColor="#0000EE"
+            android:gravity="center"
+            android:visibility="invisible"/>
+
+    </TableLayout>
+
+
+
+</LinearLayout>

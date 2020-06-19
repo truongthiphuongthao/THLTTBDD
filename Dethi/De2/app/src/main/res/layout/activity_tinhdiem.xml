@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+  <TextView
+      android:layout_marginTop="20dp"
+      android:textStyle="bold"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="TÍNH ĐIỂM THI"
+      android:textSize="18dp"
+      android:textColor="#0000EE"
+      android:gravity="center"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <TableRow>
+            <TextView
+                android:text="Điểm thực hành"
+                android:textSize="16dp"
+                android:background="#FF66CC"
+                android:textColor="#0000EE"/>
+            <EditText
+                android:id="@+id/edtdiemth"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:hint="điểm 10"
+                android:backgroundTint="#FF66CC"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Điểm trắc nghiệm"
+                android:textSize="16dp"
+                android:background="#6666FF"
+                android:textColor="#0000EE"/>
+            <EditText
+                android:id="@+id/edtdiemtn"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="điểm 10"
+                android:textSize="16dp"
+                android:backgroundTint="#FF66CC"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Điểm thi thực hành"
+                android:textSize="16dp"
+                android:background="#FFFF99"
+                android:textColor="#0000EE"/>
+            <EditText
+                android:id="@+id/edtdiemthith"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="điểm 10"
+                android:textSize="16dp"
+                android:backgroundTint="#FF66CC"/>
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal">
+        <TableRow>
+            <Button
+                android:id="@+id/btntieptuc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_weight="1"
+                android:text="TIẾP TỤC"
+                android:background="#FF66FF"/>
+            <Button
+                android:id="@+id/btndiemtonghop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_weight="1"
+                android:text="ĐIỂM TỔNG HỢP"
+                android:background="#3399CC"/>
+            <Button
+                android:id="@+id/btntrove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_weight="1"
+                android:text="TRỞ VỀ"
+                android:background="#FFFFCC"/>
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ĐIỂM TỔNG HỢP"
+                android:textSize="16dp"
+                android:textColor="#0000EE"/>
+            <EditText
+                android:id="@+id/edtdiemtonghop"
+                android:textColor="#FF0000"
+                android:textSize="16dp"
+                android:layout_width="300dp"
+                android:backgroundTint="#FF33FF"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
