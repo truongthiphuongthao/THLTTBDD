@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHUYỂN ĐỔI ĐƠN VỊ ĐO ĐƯỜNG HUYẾT"
+        android:textSize="18dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn đơn vị gốc"
+        android:textSize="15dp"/>
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="check-mg/d    L hoặc uncheck-mmol/l"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nhập trị số:"
+        android:textSize="15dp"/>
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TableRow>
+            <EditText
+                android:id="@+id/edtmmol"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"/>
+            <TextView
+                android:id="@+id/txtmmol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mmol/L"
+                android:textSize="15dp"/>
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:id="@+id/btnchuyendoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHUYỂN ĐỔI"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Kết quả chuyển đổi:"
+        android:textSize="15dp"/>
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TableRow>
+            <EditText
+                android:id="@+id/edtmg"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"/>
+            <TextView
+                android:id="@+id/txtmg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mg/dL"
+                android:textSize="15dp"/>
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>

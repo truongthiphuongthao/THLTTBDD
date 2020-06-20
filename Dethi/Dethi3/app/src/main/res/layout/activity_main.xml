@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="#FF3300"
+        android:text="ĐỀ THI THỰC HÀNH HK2 - 2016/2017"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+        <Button
+            android:id="@+id/btnchuyendoi"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:textColor="#0000EE"
+            android:text="CHUYỂN ĐỔI ĐƠN VỊ ĐƯỜNG HUYẾT"
+            android:visibility="invisible"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/btntinhdiem"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#0000EE"
+            android:text="TÍNH ĐIỂM TỔNG HỢP"
+            android:visibility="invisible"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+       <CheckBox
+           android:id="@+id/checkbox"
+           android:layout_marginTop="20dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="CHỌN CHỨC NĂNG"
+           android:textColor="#FF3300"
+           android:textSize="15dp"
+           android:textStyle="bold"/>
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TableRow>
+            <Button
+                android:id="@+id/btnluuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="LƯU Ý"
+                android:textSize="16dp"
+                android:layout_weight="1"
+                android:textColor="#0000EE"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/btnthoat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="THOÁT"
+                android:textSize="16dp"
+                android:layout_weight="1"
+                android:textColor="#0000EE"
+                android:textStyle="bold"/>
+        </TableRow>
+    </TableLayout>
+
+
+
+
+</LinearLayout>

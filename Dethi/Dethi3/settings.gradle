@@ -1,0 +1,2 @@
+rootProject.name='Dethi3'
+include ':app'

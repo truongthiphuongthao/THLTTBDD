@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TÍNH ĐIỂM THI"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#0000EE"/>
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TableRow>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Điểm thực hành"
+                android:textStyle="bold"
+                android:textColor="#0000EE"
+                android:textSize="15dp"/>
+            <EditText
+                android:id="@+id/edtdiemth"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="điểm 10"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Điểm thi điền khuyết"
+                android:textStyle="bold"
+                android:textColor="#0000EE"
+                android:textSize="15dp"/>
+            <EditText
+                android:id="@+id/edtdiemthidienkhuyet"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="điểm 10"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Điểm thi điền khuyết"
+                android:textStyle="bold"
+                android:textColor="#0000EE"
+                android:textSize="15dp"/>
+            <EditText
+                android:id="@+id/edtdiemthitracnghiem"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="điểm 10"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Điểm thi điền khuyết"
+                android:textStyle="bold"
+                android:textColor="#0000EE"
+                android:textSize="15dp"/>
+            <EditText
+                android:id="@+id/edtdiemthithuchanh"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="điểm 10"/>
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <TableRow>
+            <Button
+                android:id="@+id/btntieptuc"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TIẾP TỤC"
+                android:textSize="15dp"
+                android:background="#FF3300"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/btndiemtonghop"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ĐIỂM TỔNG HỢP"
+                android:textSize="15dp"
+                android:background="#00EE00"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/btnthoat"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="THOÁT"
+                android:textSize="15dp"
+                android:background="#FFFF33"
+                android:layout_weight="1"/>
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="KẾT QUẢ ĐIỂM"
+                android:textColor="#0000EE"
+                android:textSize="17dp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/edtketquadiem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
